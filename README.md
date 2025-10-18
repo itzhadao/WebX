@@ -7,7 +7,7 @@ WebX License: https://github.com/itzhadao/WebX/blob/main/LICENSE
 ### Windows
 run:
 ```sh
-$ wx <file>
+C:\Users\YOU> wx <file>
 ```
 ### Others
 run:
