@@ -15,7 +15,7 @@ def main():
       print("Needs to be .webx file")
       sys.exit()
     else:
-      run()
+      run(the_input)
 
 if __name__ == "__main__":
   clear()
