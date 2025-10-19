@@ -1,4 +1,5 @@
-import 
+import sys
+from inter import start # inter = interpreter
 
 def run(input_dir):
   type = ''''''
@@ -34,6 +35,7 @@ def run(input_dir):
         current = ""
       else:
         current += content[i]
+    start(type)
   except FileNotFoundError:
     print("Error: File not found")
   except Exception as e:
