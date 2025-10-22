@@ -26,7 +26,6 @@ COLOR_MAP = {
 
 
 def parse_color(value):
-    """Chuyển chuỗi màu hoặc mã hex thành RGB"""
     value = value.strip().lower()
     if value.startswith("#") and len(value) == 7:
         try:
@@ -56,7 +55,6 @@ def draw_text(screen, text, tag, color=(255, 255, 255), y_offset=0):
 
 # main interpreter
 def start(input_interpreter):
-    """Chạy nội dung webx"""
     lines = input_interpreter.strip().split("\n")
 
     bg_color = (255, 255, 255)
@@ -77,7 +75,7 @@ def start(input_interpreter):
     # Create window
     WIDTH, HEIGHT = 1600, 900
     screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
-    pygame.display.set_caption("WebX Interpreter")
+    pygame.display.set_caption("WebX")
 
     running = True
     while running:
